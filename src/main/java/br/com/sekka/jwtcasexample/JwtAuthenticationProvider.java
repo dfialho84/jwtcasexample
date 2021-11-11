@@ -35,7 +35,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
         JwtTokenDetails details = jwtUtil.parse(tokenHeader);
         if(details != null) {
             List<GrantedAuthority> authorities = new ArrayList<>();
-            principal = new User(details.getUsername, "", authorities);
+            principal = new User(details.getUsername(), "", authorities);
         }
         return principal;
     }
@@ -54,7 +54,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
             authenticatedUser = authentication;
         }
         
-        return authenticatedUser;        
+        return authenticatedUser;   
     }
 
     @Override
