@@ -4,13 +4,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @Slf4j
+@CrossOrigin("*")
 public class MyController {
 
     private String encodedKey = "N7CKwvogYX4qhxLslpFk4pJUSaxkIzAJA7N23BwQqavLViCpj1bJLuWZltYzB2la-pAgEYsr31LMvngSP_uKQw";
