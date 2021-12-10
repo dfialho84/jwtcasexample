@@ -10,11 +10,11 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
-import org.springframework.stereotype.Component;
+// import org.springframework.stereotype.Component;
 
 import br.com.sekka.jwtcasexample.controllers.*;
 
-@Component
+//@Component
 public class JwtAuthenticationProvider implements AuthenticationProvider {
 
     private JwtUtil jwtUtil;

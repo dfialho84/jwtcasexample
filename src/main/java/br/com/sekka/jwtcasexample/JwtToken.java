@@ -1,7 +1,5 @@
 package br.com.sekka.jwtcasexample;
 
-import java.io.Serializable;
-
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 

@@ -9,6 +9,7 @@ import javax.crypto.spec.SecretKeySpec;
 import org.springframework.beans.factory.annotation.Value;
 
 import br.com.sekka.jwtcasexample.JwtTokenDetails;
+import br.com.sekka.jwtcasexample.jwtsecurity.JWTTokenParser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwt;
 import io.jsonwebtoken.JwtException;
